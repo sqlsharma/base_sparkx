@@ -2,8 +2,7 @@
   "name": "databricks-advisor",
   "private": true,
   "type": "module",
-  "homepage": "http://sqlsharma.github.io/sqlsharma.github.io/",
-  
+  "homepage": "http://sqlsharma.github.io/base_sparkx/",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
