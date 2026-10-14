@@ -1,0 +1,34 @@
+{
+  "name": "databricks-advisor",
+  "private": true,
+  "type": "module",
+  "homepage": "http://sqlsharma.github.io/sqlsharma.github.io/",
+  
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "collector:service": "tsx scripts/local-collector-server.ts",
+    "collector:eventlogs": "tsx scripts/collect-eventlog.ts",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    "@electric-sql/pglite": "^0.5.8",
+    "lucide-react": "^1.50.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^7.18.4",
+    "recharts": "^3.10.1"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "@types/react": "^18.3.5",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "gh-pages": "^6.3.0",
+    "tsx": "^4.20.6",
+    "typescript": "^5.5.4",
+    "vite": "^5.4.2"
+  }
+}
